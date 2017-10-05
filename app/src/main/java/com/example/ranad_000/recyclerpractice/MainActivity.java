@@ -70,27 +70,27 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewClick
         String toastMessage = "Item #" + position + " clicked";
         mToast = Toast.makeText(this, toastMessage, Toast.LENGTH_LONG);
         mToast.show();
-//        switch (position) {
-//            case 0:
-//                Intent chest = new Intent(BodyPartSelection.this, nutritionActivity.class);
-//                startActivity(chest);
-//                break;
-//            case 1:
-//                Intent back = new Intent(BodyPartSelection.this, BackWorkouts.class);
-//                startActivity(back);
-//                break;
-//            case 2:
-//                Intent arms = new Intent(BodyPartSelection.this, Arm_Workout_Activity.class);
-//                startActivity(arms);
-//                break;
-//            case 3:
-//                Intent leg = new Intent(BodyPartSelection.this, LegWorkoutActivity.class);
-//                startActivity(leg);
-//                break;
-//            case 4:
-//                Intent shoulder = new Intent(BodyPartSelection.this, ShoulderWorkoutActivity.class);
-//                startActivity(shoulder);
-//                break;
-//        }
+        switch (position) {
+            case 0:
+                Intent chest = new Intent(MainActivity.this, Main2Activity.class);
+                startActivity(chest);
+                break;
+            case 1:
+                Intent back = new Intent(MainActivity.this, Main3Activity.class);
+                startActivity(back);
+                break;
+            case 2:
+                Intent arms = new Intent(MainActivity.this, Main2Activity.class);
+                startActivity(arms);
+                break;
+            case 3:
+                Intent leg = new Intent(MainActivity.this, Main3Activity.class);
+                startActivity(leg);
+                break;
+            case 4:
+                Intent shoulder = new Intent(MainActivity.this, Main2Activity.class);
+                startActivity(shoulder);
+                break;
+        }
     }
 }
